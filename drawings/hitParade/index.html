@@ -1,0 +1,241 @@
+<html>
+	<head>
+	
+	
+	<script
+		  src="https://code.jquery.com/jquery-3.2.1.min.js"
+		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+		  crossorigin="anonymous">
+	</script>
+	<script
+  		src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+ 		integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+		crossorigin="anonymous">
+ 		 	
+  	</script>
+
+
+
+
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+
+
+ 
+
+  	<script language="javascript" src="lib/jquery.rwdImageMaps.js"></script>
+	<script language="javascript" src="lib/p5.js"></script>
+	<script language="javascript" src="lib/p5.dom.js"></script>
+	<script language="javascript" src="lib/p5.sound.js"></script>
+
+	<script language="javascript" src="main.js"/></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	</head>	
+	<body>
+		<div class="container-fluid">
+			<img onclick="removeForm()" id='x' class="inactive" src="img/x.png" />
+
+		<iframe id="form" src="https://forms.umusic.com/533451/form/7636" height="100%" width="100%" frameborder="0" style="overflow:hidden; height:100%; width:100%; position:absolute;"></iframe>
+		<div class="title">
+				<p class="title text-center"/>MUTEMATH</p>
+				
+				<p onclick="launchForm()" class = 'signup' src='img/signup.png'/>SIGN UP</p>
+			
+			</div>
+			<div id="anim">
+				<img class="piece" src="img/1a.png" alt="" />
+				<img class="piece" src="img/2a.png" alt="" />
+				<img class="piece" src="img/3a.png" alt="" />
+				<img class="piece" src="img/4a.png" alt="" />
+				<img class="piece" src="img/5a.png" alt="" />
+				<img class="piece" src="img/6a.png" alt="" />
+				<img class="piece" src="img/7a.png" alt="" />
+				<img class="piece" src="img/8a.png" alt="" />
+				<img class="piece" src="img/9a.png" alt="" />
+				<img class="piece" src="img/10a.png" alt="" />
+
+					
+		
+					<img src="img/fcBlank.png" alt="" usemap="#Map" />
+					<map name="Map" id="Map">
+				    <area class="mapSect" onmouseover="hovered(1)" onmouseout="exited(1)" alt="" title=""  shape="poly" coords="272,39,431,684,461,745,479,759,495,806,503,837,523,840,535,715,518,460,471,254,464,41,454,5,418,0" />
+				    <area class="mapSect" onmouseover="hovered(2)" onmouseout="exited(2)" alt="" title=""  shape="poly" coords="253,70,112,152,232,418,374,652,424,739,457,789,469,828,488,861,502,861,510,850,477,765,448,703" />
+				    <area class="mapSect" onmouseover="hovered(3)" onmouseout="exited(3)" alt="" title=""  shape="poly" coords="97,241,27,348,205,562,355,704,378,714,388,698,378,677" />
+				    <area class="mapSect" onmouseover="hovered(4)" onmouseout="exited(4)" alt="" title=""  shape="poly" coords="41,424,16,441,7,535,307,722,385,759,452,803,462,788,417,748" />
+				    <area class="mapSect" onmouseover="hovered(5)" onmouseout="exited(5)" alt="" title=""  shape="poly" coords="17,559,0,591,2,673,338,813,485,925,524,892,480,848,456,807" />
+				    <area class="mapSect" onmouseover="hovered(6)" onmouseout="exited(6)" alt="" title=""  shape="poly" coords="543,995,692,995,717,888,589,410,548,270,528,226,540,202,524,146,499,139,504,316,522,465" />
+				    <area class="mapSect" onmouseover="hovered(7)" onmouseout="exited(7)" alt="" title=""  shape="poly" coords="734,887,765,906,862,853,856,763,639,361,571,244,543,211,526,219,553,275" />
+				    <area class="mapSect" onmouseover="hovered(8)" onmouseout="exited(8)" alt="" title=""  shape="poly" coords="886,767,960,623,627,284,614,300" />
+				    <area class="mapSect" onmouseover="hovered(9)" onmouseout="exited(9)" alt="" title=""  shape="poly" coords="968,603,993,468,546,189,540,212" />
+				    <area class="mapSect" onmouseover="hovered(10)" onmouseout="exited(10)" alt="" title=""  shape="poly" coords="500,126,500,44,562,88,717,187,990,328,999,335,999,439,728,289,638,238,543,196,528,155" />
+				
+				</map>
+			</div>
+			
+			<div class='socials'>
+				<a href="https://www.facebook.com/mutemath"><img class="icon" src = "img/facebook.png"/></a>
+				<a href="https://twitter.com/MUTEMATH"><img class="icon" src = "img/twitter.png"/></a>
+				<a href="https://play.spotify.com/artist/1J9Z9bhqkgyqseEi85cbyx?play=true&utm_source=open.spotify.com&utm_medium=open"><img class="icon" src = "img/spotify.png"/></a>
+				<img class="bear" src="img/bear2.png">
+				<a href="https://itunes.apple.com/us/artist/mutemath/id310532354"><img class="icon" src = "img/itunes.png"/></a>
+				<a href="https://www.instagram.com/mutemath/"><img class="icon" src = "img/instagram.png"/></a>
+				<a href="https://www.youtube.com/channel/UCrV-WEtbXrRIkgWgbXLAvcQ"><img class="icon" src = "img/youtube.png"/></a>
+				
+
+				
+			</div>	
+			
+	</div>
+	
+	
+
+	
+
+	</body>
+	<style type="text/css">
+	
+			
+
+	@font-face{
+		font-family:'MyFont';
+		src:url('helvetica-neue-bold.ttf');
+
+	}
+
+
+	body{
+			background-image: url("img/bg.png");
+			background-size:100%;
+			/*background-color: rgb(30,30,35);*/
+
+		color:rgb(81,67,47);
+			overflow:hidden;
+			font-family: 'MyFont';
+			
+				font-size:44px;
+
+	}			
+
+
+	
+
+	.title{
+		padding-top:5px;
+		text-align: center;
+		font-family: 'MyFont'
+		
+		font-size:44px;
+	
+
+	}
+	.signup{
+		
+		text-align: center;
+		font-size:14px;
+		border:solid 1px;
+		width:100px;
+
+		padding:5px;
+		margin:auto;
+		float:center;
+		font-family:helvetica;
+	
+	}
+
+
+	.piece{
+		position:absolute;
+		z-index: -1;
+		display:none;
+	
+	}
+	.bear{
+		padding:15px;
+		width:90px;
+		padding-bottom:15px;
+	}
+	#anim{
+		text-align: center;
+		width:100%;
+		padding-top:30px;
+
+	
+	}
+	.container-fluid{
+		padding: 0px;
+
+	}
+	
+	#page{
+		padding-top:40px;
+	}
+		.signup:hover{
+		transform:scale(.9);
+		-webkit-transform:scale(.9);
+		-ms-transform:scale(.9);
+		cursor: pointer;
+		opacity:.7;
+	}
+
+	.mapSect{
+		outline:none;
+	}
+	#anim img{
+		text-align: center;
+		width:70%;
+		max-width:430px;
+	}
+	.socials{
+		position:fixed;
+		width:100%;
+		bottom:7px;
+		text-align:center;	
+	}
+	iframe{
+		background-color:rgba(230,230,230, 0.95);
+		top:0px;
+		display:none;
+		z-index: 1;
+	}
+
+	#x{
+		position:absolute;
+		width:25px;
+		top:5px;
+		right:5px;
+		z-index: 2;
+		
+	}
+
+	.active{
+		display:inline;
+	}
+	.inactive{
+		display:none;
+	}
+	
+	.icon{
+	
+		width:40px;
+	}
+	 #x:hover{
+		transform:scale(.9);
+		-webkit-transform:scale(.9);
+		-ms-transform:scale(.9);
+		opacity:.7;
+		cursor: pointer;
+
+	}
+	 .icon:hover{
+		transform:scale(.9);
+		-webkit-transform:scale(.9);
+		-ms-transform:scale(.9);
+		opacity:.7;
+	}
+	#edit-submitted-zip-code{
+		width:200px;
+	}
+
+
+	</style>
+</html>

@@ -1,0 +1,33 @@
+.pnav_thumb{
+	border-radius: 5px;
+}
+
+.tile{
+	border:none;
+	overflow:hidden;
+	padding:10px;
+}
+.large{
+	flex: 3 ;
+}
+.med{
+	flex: 2;
+}
+.small{
+	flex: 1 ;
+}
+
+
+.row{
+	display:flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+}
+.container{
+	display:flex;
+	flex-flow: column nowrap;
+	justify-content: center;
+	margin: auto;
+	width:90%;
+	min-width: 850px;
+}

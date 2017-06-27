@@ -1,0 +1,95 @@
+<html>
+	<head>	
+		<script src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="./style.css">	
+	</head>
+
+	<body>
+		<div class="container">
+			<div class = "left">
+				<div class="left_header">
+					<a class="left_name" href="">adam november</a> <br>
+					<a class="left_email">ajnovember@gmail.com</a> 
+				</div>		
+				<ul class="left_nav">
+					<li><a class = "left_nav_item"  href="./">about</a></li>
+					<li><a class = "left_nav_item" href = "./projects">projects</a></li> 
+					<li><a class = "left_nav_item" href = "">experiments</a></li>
+					<li><a class = "left_nav_item" href = "./drawings">web drawings</a></li>
+				
+				</ul>
+			</div>		
+
+			<div class="main">
+				<!--<div id = "popup" onclick="close()" >
+					<img src = "./img/x.png" onclick="closeMe()" class="x"/>
+				</div>-->
+				<div class="main_title">experiments</div>
+					
+					<div class = "exp">
+							
+								<div class = "exp_title">MIDI pendulum</div>
+								
+								<iframe class = "exp_video"  width="560" height="315" src="https://www.youtube.com/embed/ah_r8SHoPg0" frameborder="0" allowfullscreen></iframe>		
+								<div class = "exp_description">Here, a reed (magnet) switch senses a swinging magnet and sends impulses to a Teensy microcontroller. The Teensy then sends MIDI messages via USB to any DAW, in this case Ableton Live.</div> 
+							
+						
+						
+					</div>	
+					<div class = "exp">
+							
+								<div class = "exp_title">bitHarp 2.0</div>
+								
+								<iframe class = "exp_video" width="560" height="315" src="https://www.youtube.com/embed/2XMBdxT8yyc" frameborder="0" allowfullscreen></iframe>
+								<div class = "exp_description">This is a larger, 6 foot, 28 string version of my bitHarp that I created specifically to bring to the STEAM:Works festival in May 2015. </div> 
+							
+						
+						
+					</div>
+					<div class = "exp">
+							
+								<div class = "exp_title">rubber band pitch bend</div>
+								<iframe class = "exp_video" width="560" height="315" src="https://www.youtube.com/embed/PIPRSSd-cd0" frameborder="0" allowfullscreen></iframe>
+								<iframe class = "exp_video" width="560" height="315" src="https://www.youtube.com/embed/nu1vU2IvbIM" frameborder="0" allowfullscreen></iframe>
+								<div class = "exp_description">These are experiments I did with conductive rubber bands. I discovered that these rubber bands change their internal resistance when streched, so I could measure this change and convert it to a pitch bend amount. I am using capacitive sensing to read rubber bands.</div> 
+							
+						
+						
+					</div>
+					<div class = "exp">
+							
+								<div class = "exp_title">physical groove pizza</div>
+								
+								<iframe class = "exp_video" width="560" height="315" src="https://www.youtube.com/embed/a34IeF2-jRc" frameborder="0" allowfullscreen></iframe>
+								<div class = "exp_description">A prototype of a physical Groove Pizza, which uses metal washers to complete circuits and register rhythms on the face of the pizza</div> 
+							
+						
+						
+					</div>		
+					<div class = "exp">
+							
+								<div class = "exp_title">photo theremin</div>
+								
+								<iframe class = "exp_video" width="560" height="315" src="https://www.youtube.com/embed/v92KrB2kZSE" frameborder="0" allowfullscreen></iframe>
+								<div class = "exp_description">A simple instrument composed of a photo resistor, being read by a Teensy microcontroller, sending sound to a speaker. The Teensy is programmed such that the more light the photoresistor senses, the higher the pitch produced. </div> 
+							
+						
+						
+					</div>	
+					
+			</div>
+
+		</div>
+		
+
+	</body>
+
+
+
+</html>
