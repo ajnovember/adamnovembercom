@@ -5,6 +5,7 @@ var b;
 
 
 function setup(){
+
 	cnv = createCanvas(windowWidth,windowHeight);
 	change = 1
 	theta=0;
@@ -13,11 +14,14 @@ function setup(){
 	b=0;
 	strokeWeight(1);
 	//cnv.style("width:100%");
-	
+	background(0);
+	frameRate(10);
 }
 
 function draw(){
-	stroke(0,(b+=change)/2,b+=change,50);
+	//rotate(theta/10);
+	stroke(0,(b+=change)/2,b+=change,30);
+	stroke(200,(b+=change)/2,100,40);
 	//background(150,200,250);
 	translate(width/2,height/2);
 	rotate(theta);
@@ -29,11 +33,13 @@ function draw(){
 	branch(0,width/4);
 	branch(0,-width/4);
 	//translate
-	theta+=.02;
+	theta+=3;
 	
 	if(b>255){change=-change;}
 	if(b<0){change=-change;}
 	//if(theta>1)noLoop();
+	background(0,6);
+	
 }
 
 function branch(x,y){
@@ -51,4 +57,5 @@ function branch(x,y){
 }
 function windowResized() {
   resizeCanvas(windowWidth, windowHeight);
+  background(0);
 }

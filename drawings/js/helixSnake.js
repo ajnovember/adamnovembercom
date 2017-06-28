@@ -17,8 +17,8 @@ function draw(){
   background(245,150,180);
   for(var i = 0; i < 100; i++){
     
-    var x = width/2 + sin((i)*theta)*width/3;
-    var y = height*(i)*.009+25;
+    var x = width/2 + sin((i)*theta)*width/4;
+    var y = height*(i)*.009+20;
     fill(0,(y/2),250);
     noStroke();
     rect(x,y, 10,10);
@@ -27,7 +27,7 @@ function draw(){
     for(var j = 1; j < 3; j++){
     if(i-j>-1){
       stroke(0);
-      line( x,y,width/2 + sin((i-j)*theta)*width/3,height*(i-j)*.009+25);
+      line( x,y,width/2 + sin((i-j)*theta)*width/4,height*(i-j)*.009+20);
     }
     }
   }

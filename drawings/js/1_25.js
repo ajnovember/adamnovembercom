@@ -10,7 +10,7 @@ function setup(){
   stroke(0,50);
   fill(0,200);
   z=0;
-  cnv.style("width:100%");
+  //cnv.style("width:100%");
 }
 
 

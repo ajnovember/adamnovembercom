@@ -31,7 +31,7 @@ function setup(){
 
 
 	setInterval(function(){counter++},200);
-	cnv.style("width:100%");
+	//cnv.style("width:100%");
 }
 
 function draw() {

@@ -1,135 +1,154 @@
 <html>
 	<head>	
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
 		
-		<link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
+		
+		<!link href="https://fonts.googleapis.com/css?family=Jura" rel="stylesheet">
 			<link rel="stylesheet" type="text/css" href="style.css">
 			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
 
 	</head>
 
 	<body>
+
+
+
+
 		<div class="container">
-			<div class = "top">
-				<div class="header">
-					<a class="left_name" href="">adam november</a> <br>
-					<a class="left_email">ajnovember@gmail.com</a> 
-				</div>		
-				<ul class="nav">
-					<li><a class = "left_nav_item" href = "">projects</a></li> 
-					<li><a class = "left_nav_item" href = "experiments.html">experiments</a></li>
-				
-					<li><a class = "left_nav_item"  href="about.html">about</a></li>
-
-				
-				</ul>
-			</div>		
-
-			<div class="main">
-
-				<div class="row">
-					<iframe class="med tile" scrolling="no" frameBorder="0" height="400" src="drawings/4_27.html"></iframe>
-					
-					<iframe class="med tile" class = "exp_video"   height="400" src="https://www.youtube.com/embed/ah_r8SHoPg0" frameborder="0" allowfullscreen></iframe>	
-
-				</div>
-
-				<div class="row">	
-
-					<iframe class="med tile" frameBorder="0"  height="400" src="drawings/waves.html"></iframe>
-					
-					<iframe class="med tile" height="400" src="https://www.youtube.com/embed/veHGWtCsZBA" frameborder="0" allowfullscreen>
-					</iframe>	
-					<iframe class="small tile" scrolling="no" frameBorder="0"  height="400" src="drawings/helixSnake.html"></iframe>
-					
-				
-				</div>	
-
-				<div class="row">	
-				
-					<iframe class="large tile"  height="315" src="https://www.youtube.com/embed/0zBLnOj2k0Y" frameborder="0" allowfullscreen></iframe>	
-
-					<iframe class="med tile" frameBorder="0"  height="315" src="drawings/triangles.html"></iframe>
-			
-				</div>	
-				<div class="row">
-
-					<iframe class="small tile" scrolling="no"  height="400" frameBorder="0" src="drawings/lines.html"></iframe> 
-
-					<iframe class="small tile"  height="400" src="https://www.youtube.com/embed/2XMBdxT8yyc" frameborder="0" allowfullscreen></iframe>
-					<iframe class="medium tile" scrolling="no" frameBorder="0" height="400" src="drawings/2_10.html"></iframe>
-
-				</div>
-
-				<div class="row">
-					<iframe class="med tile" height="315" scrolling="no" frameBorder="0" src="drawings/blocks.html"></iframe>
-					
-					<iframe class="large tile" height="315" src="https://www.youtube.com/embed/PIPRSSd-cd0" frameborder="0" allowfullscreen></iframe>
-				
-				</div>	
-
-				<div class="row">	
-
-					<iframe class="large tile"   height="315" src="https://www.youtube.com/embed/MwOAKaKTF8g" frameborder="0" allowfullscreen></iframe>
-					<img class="med  tile" height="315" src="img/HHHsquare.jpg"/>
-				
-				</div>	
-
-				<div class="row">	
-
-					<iframe class="med tile" frameBorder="0" src="drawings/drops.html"></iframe>
-					
-					<iframe class="large tile"  height="315" src="https://www.youtube.com/embed/pQoikPOEDww" frameborder="0" allowfullscreen></iframe>	
-					
-				
-				</div>	
-			
-
-
-
-
-
-			
-					<!--div class = "pnav">
-						<a href="pizza.html" class="pnav_tile">
-							<img class = "pnav_thumb" src = "img/GP.jpg"/>
-							<div class = "pnav_title">Groove Pizza</div>
-							
-						</a>
-						<a href="sxsw.html" class="pnav_tile">
-							<img class = "pnav_thumb" src = "img/budLightMusic.jpg"/>
-							<div class = "pnav_title">Bud Light Music</div>
-							
-						</a>
-						<a href="bitHarp.html"  class="pnav_tile">
-							<img class = "pnav_thumb" src = "img/harp.jpg"/>
-							<div class = "pnav_title">bitHarp</div>
-							
-						</a>
-						<a href="hiphop.html" class="pnav_tile">
-							<img class = "pnav_thumb" src = "img/HHH.png"/>
-							<div class = "pnav_title">Hip Hop Hacks</div>
-							
-						</a>	
-						<a href="slide.html"  class="pnav_tile">
-							<img class = "pnav_thumb" src = "img/slidegtr.png"/>
-							<div class = "pnav_title">DIY Slide Guitar</div>
-								
-						</a>
-						<a href="science.html"  class="pnav_tile">
-							<img class = "pnav_thumb" src = "img/SOM.png"/>
-							<div class = "pnav_title">Science of Music</div>
-							
-						</a>
-					</div-->	
-					
+			<div class="header">
+					<div class="title">
+						<p class="name">adam november</p>
+						
+					</div>
+					<div class="nav">
+						<p onclick="switcher()" class="navButton">words</p>
+					</div>
 			</div>
+			<div class="words hidden" id="words"  >
+			 <p > Hi! I'm Adam. I'm a creative developer, musician, and teacher in Brooklyn, NY. My recent work includes sound installation programming for The Rubin Museum, firmware development for wearable devices at Code and Theory, and teaching computer science and music for the Urban Arts Partnership. You can see my full resume <a target="_blank" href="AdamNovemberResume.pdf">here</a>. I also play guitar in NYC-based bands <a href="https://oxymorrons.com">Oxymorrons</a> and <a>Upright Man</a> and am a co-organizer of the Monthly Music Hackathon and Hip Hop Hacks.<br> Welcome to my site! Below are some javascript drawings and videos of hacked instruments and other music/tech experiments, enjoy them. Feel free to contact me with questions about anything you see here at <a>ajnovember@gmail.com</a>.
+			 </div>
+				
+				
+	
+				
+				<div class="row">
+
+					<iframe class="med tile" scrolling="no" frameBorder="0" height="325" src="drawings/4_27.html"></iframe>
+					
+						<iframe class="med tile" class = "exp_video"   height="325" src="https://www.youtube.com/embed/ah_r8SHoPg0" frameborder="0" allowfullscreen></iframe>	
+
+
+					<iframe class="med tile" frameBorder="0"  height="325" src="drawings/waves.html"></iframe>
+					
+					
+					
+
+				</div>
+
+				<div class="row">	
+					
+					<iframe class="large tile" scrolling="no"  height="325" frameBorder="0" src="drawings/lines.html"></iframe> 
+						
+					<iframe class="large tile"   height="325" src="https://www.youtube.com/embed/MwOAKaKTF8g" frameborder="0" allowfullscreen></iframe>
+					
+					
+					<iframe class="small tile" scrolling="no" frameBorder="0"  height="325" src="drawings/helixSnake.html"></iframe>
+					
+			
+					
+				
+				</div>	
+
+				<div class="row">
+					<iframe class="med tile"  height="325" src="https://www.youtube.com/embed/0zBLnOj2k0Y" frameborder="0" allowfullscreen></iframe>	
+					
+					<iframe class="med tile" scrolling="no" frameBorder="0" height="325" src="drawings/2_10.html"></iframe>
+					<iframe class="med tile" height="325" src="https://www.youtube.com/embed/PIPRSSd-cd0" frameborder="0" allowfullscreen></iframe>
+				
+				</div>	
+				<div class="row">
+
+				
+					
+					
+					<img class="small tile" height="325" src="img/HHHsquare.jpg"/>
+					<iframe class="med tile" frameBorder="0"  height="325" src="drawings/triangles.html"></iframe>
+					
+					
+					
+					<iframe class="med tile" height="325" src="https://www.youtube.com/embed/veHGWtCsZBA" frameborder="0" allowfullscreen>
+					</iframe>
+
+					
+
+				</div>
+				<div class="row">
+					
+					
+			
+				</div>	
+
+				
+
+				<div class="row">	
+
+				
+						<iframe class="small tile"  height="325" src="https://www.youtube.com/embed/2XMBdxT8yyc" frameborder="0" allowfullscreen></iframe>
+					<iframe class="med tile" height="325" frameBorder="0" src="drawings/drops.html"></iframe>
+					<iframe class="med tile" height="325" scrolling="no" frameBorder="0" src="drawings/blocks.html"></iframe>
+					
+				
+				</div>	
+
+				<div class="row">	
+
+					
+					
+					<iframe class="med tile" scrolling="no" height="325" frameBorder="0" src="drawings/1_27.html"></iframe>
+					
+					
+					<iframe class="med tile"  height="325" src="https://www.youtube.com/embed/pQoikPOEDww" frameborder="0" allowfullscreen></iframe>	
+					<iframe class="med tile" scrolling="no" height="325" frameBorder="0" src="drawings/1_25.html"></iframe>
+					
+				
+				</div>	
+
+				
+			
+
+
+
+
+
+			
+
+			
 
 		</div>
+				<style style="text/css">
+					div.slide-down {
+					  width:100%;
 		
+					}
+					div.slide-down p{
+					  animation: 2s slide-down;
+					  margin-top:0%;
+					}
 
+					@keyframes slide-down {
+					  from {
+					    margin-top: -100%;
+					    
+					  }
+
+					  to {
+					    margin-top: 0%;
+					
+					  }
+					}
+				</style>
+		
+			<script anguage="javascript" src="main.js"></script>
 	</body>
 
 </html>

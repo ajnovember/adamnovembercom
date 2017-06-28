@@ -29,7 +29,7 @@ function setup(){
 }
 
 function draw(){
-    turbulance = .1+ mouseY/(scaleX*4);
+    turbulance = .1+ mouseY/(scaleX*2);
 
     size = 5+ mouseX/(scaleX/2.5);
      if(!entered){
@@ -45,9 +45,7 @@ function draw(){
         particles[i].update();
     }
 }
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+
 
 var particle = function(x,y,angle){
     this.x = x;
@@ -63,4 +61,10 @@ particle.prototype = {
         ellipse(this.x + 10*cos(theta+this.angle*turbulance), this.y + 10*sin(theta+this.angle*turbulance), size,size);
     }
 }
+function windowResized() {
+  clear();  
+  resizeCanvas(windowWidth, windowHeight);
+  particles = [];
+  setup();
 
+}
