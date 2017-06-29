@@ -26,7 +26,7 @@ function draw(){
    // ellipse(x,y, 3,3);
     for(var j = 1; j < 3; j++){
     if(i-j>-1){
-      stroke(0);
+      stroke(0,50);
       line( x,y,width/2 + sin((i-j)*theta)*width/4,height*(i-j)*.009+20);
     }
     }
